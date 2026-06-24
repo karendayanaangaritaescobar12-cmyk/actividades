@@ -1,0 +1,200 @@
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(
+        135deg,
+        #eaf4ff,
+        #d7ebff,
+        #c6e0ff
+    );
+    min-height:100vh;
+    padding:30px;
+    color:#1e293b;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+
+main{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===== TITULOS ===== */
+
+h1{
+    text-align:center;
+    color:#0f172a;
+    margin-bottom:25px;
+    font-size:2.3rem;
+}
+
+h2{
+    color:#0f4fa8;
+    margin-bottom:15px;
+}
+
+/* ===== BOTONES ===== */
+
+.botones,
+.acciones{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+button{
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:0.95rem;
+    font-weight:600;
+    transition:.3s;
+    background:#2563eb;
+    color:white;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    background:#1d4ed8;
+    box-shadow:0 8px 20px rgba(37,99,235,.3);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+/* ===== PANEL ===== */
+
+#panel-equipos{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ===== LISTA ===== */
+
+#lista-equipos{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+/* ===== TARJETAS ===== */
+
+.card-equipo{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    border-left:6px solid #2563eb;
+    box-shadow:
+    0 6px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card-equipo:hover{
+    transform:translateY(-5px);
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.12);
+}
+
+.card-equipo h3{
+    color:#0f4fa8;
+    margin-bottom:12px;
+    font-size:1.3rem;
+}
+
+.card-equipo p{
+    margin:8px 0;
+    color:#475569;
+}
+
+/* ===== DESTACADO ===== */
+
+.destacado{
+    border-left:6px solid #0ea5e9;
+    background:
+    linear-gradient(
+        135deg,
+        #ffffff,
+        #eef8ff
+    );
+}
+
+.destacado h3{
+    color:#0284c7;
+}
+
+/* ===== BOTON ELIMINAR ===== */
+
+.btn-eliminar{
+    margin-top:15px;
+    width:100%;
+    background:#ef4444;
+}
+
+.btn-eliminar:hover{
+    background:#dc2626;
+}
+
+/* ===== RESUMEN ===== */
+
+#resumen{
+    margin-bottom:20px;
+}
+
+#resumen p{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    border-left:5px solid #2563eb;
+    font-weight:600;
+    box-shadow:
+    0 4px 10px rgba(0,0,0,.06);
+}
+
+/* ===== AVISO ===== */
+
+.aviso{
+    background:#dbeafe;
+    color:#1e40af;
+    border-left:5px solid #2563eb;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    button{
+        width:100%;
+    }
+
+    .botones,
+    .acciones{
+        flex-direction:column;
+    }
+
+}
